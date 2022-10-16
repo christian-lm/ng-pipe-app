@@ -4,7 +4,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 
 // Modulo personalizado
-import {PrimeNGModule} from "./prime-ng/prime-ng.module";
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -12,9 +12,10 @@ import {PrimeNGModule} from "./prime-ng/prime-ng.module";
   ],
   imports: [
     BrowserModule,
-    PrimeNGModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
