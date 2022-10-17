@@ -12,6 +12,7 @@ import {VentasModule} from "./ventas/ventas.module";
 import localeES from '@angular/common/locales/es';
 import localeFR from '@angular/common/locales/fr';
 import {registerLocaleData} from "@angular/common";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 registerLocaleData(localeES);
 registerLocaleData(localeFR);
@@ -23,6 +24,7 @@ registerLocaleData(localeFR);
   imports: [
     BrowserModule,
     AppRouterModule,
+    BrowserAnimationsModule,
     SharedModule,
     VentasModule
   ],
