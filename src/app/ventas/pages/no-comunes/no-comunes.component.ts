@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {interval} from "rxjs";
 
 @Component({
   selector: 'app-no-comunes',
@@ -66,4 +67,14 @@ export class NoComunesComponent {
       edad: 10000
     }
   ]
+
+  // Async pipe
+  miObservable = interval(1000); // Va a emitir numeros desde 0 cada 1segundo
+
+  valorPromesa = new Promise(resolve => {
+
+    setTimeout(() => {
+      resolve('Tenemos data de la promesa');
+    }, 3500);
+  });
 }
