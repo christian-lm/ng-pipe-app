@@ -47,6 +47,14 @@
         <li>fecha | date: 'MMMM'</li>
         <li>fecha | date: 'MMMM dd, yyyy'</li>
       </ul>
+
+      <hr>
+      <ul>
+        <li>fecha | date: 'long': 'GMT+2'</li>
+        <li>fecha | date: 'long': 'GMT-4'</li>
+        <li>fecha | date: 'long': 'GMT-4':'en'</li>
+        <li>fecha | date: 'long': 'GMT-4':'fr'</li>
+      </ul>
     </p-card>
   </div>
   <div class="md:col-6">
@@ -59,6 +67,15 @@
         <li>{{fecha | date: 'dd/MM/yyyy HH:mm:ss'}}</li>
         <li>{{fecha | date: 'MMMM'}}</li>
         <li>{{fecha | date: 'MMMM dd, yyyy'}}</li>
+      </ul>
+
+      <hr>
+
+      <ul>
+        <li>{{fecha | date: 'long': 'GMT+2'}}</li>
+        <li>{{fecha | date: 'long': 'GMT-4'}}</li>
+        <li>{{fecha | date: 'long': 'GMT-4':'en'}}</li> <!-- Funciona porque por defecto es 'en'-->
+        <li>{{fecha | date: 'long': 'GMT-4':'fr'}}</li> <!-- Funciona porque está imporado en el app-module-->
       </ul>
     </p-card>
   </div>
