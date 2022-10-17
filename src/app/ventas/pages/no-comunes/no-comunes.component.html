@@ -55,6 +55,12 @@
     </p-fieldset>
   </div>
 
+  <div class="md:col-6">
+    <p-fieldset legend="JSON Pipe" [toggleable]="true">
+
+      <pre>{{heroes | json}}</pre>
+    </p-fieldset>
+  </div>
 
   <div class="md:col-6">
     <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
@@ -66,4 +72,6 @@
       </ul>
     </p-fieldset>
   </div>
+
+
 </div>
