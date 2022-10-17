@@ -10,11 +10,10 @@
     <p-card header="Ventas Netas"
             subheader="Del año actual">
       <ul>
-        <li><i class="pi pi-dollar"></i> {{ventasNetas | number}}</li>
         <!-- Con number se muestran los numeros formateados y los decimales redondeados a 3 decimales-->
+        <li><i class="pi pi-dollar"></i> {{ventasNetas | number}}</li>
         <li><i class="pi pi-dollar"></i> {{ventasNetas | number: '1.2-2'}}</li><!-- Les decimos que 2 decimales-->
         <li><i class="pi pi-dollar"></i> {{ventasNetas + 100000000000 | number: '1.2-2'}}</li>
-        <!-- Les decimos que 2 decimales-->
       </ul>
     </p-card>
   </div>
