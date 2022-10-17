@@ -17,4 +17,24 @@
       </ul>
     </p-card>
   </div>
+
+  <div class="md:col-4">
+    <p-card header="Ventas Brutas"
+            subheader="Del año actual">
+      <ul>
+        <li>{{ventasNetas + 100000000000 | currency }}</li>
+        <li>{{ventasNetas + 100000000000 | currency: '€' }}</li> <!-- Cambiar de moneda -->
+        <li>{{ventasNetas | currency: 'EUR':'':'1.4-4' }}</li> <!-- Cambiar de moneda y mostrar 4 decimales-->
+      </ul>
+    </p-card>
+  </div>
+
+  <div class="md:col-4">
+    <p-card header="Ganancias porcentual"
+            subheader="Del año actual">
+      <ul>
+        <li>{{porcentaje | percent:'1.2-2' }}</li> <!-- Porcentaje con decimales -->
+      </ul>
+    </p-card>
+  </div>
 </div>
